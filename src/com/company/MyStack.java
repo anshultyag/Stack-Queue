@@ -13,6 +13,9 @@ package com.company;
            public INode<K> peak {
                return myLinkedList.head;
            }
+       public INode<K> pop {
+           return myLinkedList.pop;
+       }
            public void printStack () {
                myLinkedList.printMyNodes();
            }
