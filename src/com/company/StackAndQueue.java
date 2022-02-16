@@ -18,5 +18,18 @@ public class StackAndQueue {
         top=head;
     }
 
+    public void display(){
+        if (head == null) {
+            System.out.println("Linked list is Empty");
+            return;
+        }
+        else {
+            Node tempNode = head;
 
+            while (tempNode != null) {
+                System.out.print(tempNode.data + " ");
+                tempNode = tempNode.next;
+            }
+        }
+    }
 }
