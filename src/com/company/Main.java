@@ -17,5 +17,8 @@ public class Main {
         System.out.println("Delete last element from stack");
         StackOperation.pop();
         System.out.println("\n===================");
+        System.out.println("Create Queue");
+        StackOperation.queueElement();
+        System.out.println("\n===================");
     }
 }
