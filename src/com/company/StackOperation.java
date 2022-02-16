@@ -37,4 +37,17 @@ public class StackOperation {
         list.queue(70);
         list.display();
     }
+
+    public static void dequeueElement(){
+        StackAndQueue list =new StackAndQueue();
+        list.queue(56);
+        list.queue(30);
+        list.queue(70);
+        System.out.println("Before Pop:");
+
+        list.display();
+        list.pop();
+        System.out.println("\nAfter Pop:");
+        list.display();
+    }
 }

@@ -20,5 +20,9 @@ public class Main {
         System.out.println("Create Queue");
         StackOperation.queueElement();
         System.out.println("\n===================");
+
+        System.out.println("Dequeue Elements");
+        StackOperation.dequeueElement();
+        System.out.println("\n===================");
     }
 }
