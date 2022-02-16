@@ -15,21 +15,33 @@ public class StackAndQueue {
             this.head = newnode;
             newnode.next = tempNode;
         }
-        top=head;
+        top = head;
     }
 
-    public void display(){
+    public void peek() {
+        System.out.println("Top element is " + this.top.data);
+    }
+
+    public void pop() {
+        Node temp = top;
+        while (temp != null) {
+            Node tempNode = this.head;
+            this.head = tempNode.next;
+            temp = temp.next;
+        }
+    }
+
+    public void display() {
         if (head == null) {
             System.out.println("Linked list is Empty");
             return;
-        }
-        else {
+        } else {
             Node tempNode = head;
-
             while (tempNode != null) {
                 System.out.print(tempNode.data + " ");
                 tempNode = tempNode.next;
             }
         }
+
     }
 }
